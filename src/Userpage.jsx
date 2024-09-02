@@ -14,7 +14,7 @@ const UserPage = () => {
                 // console.log(`Fetching user data from ${backendUrl}/api/users/${userId}`);
                 
                 const response = await axios.get(`${backendUrl}/api/users/${userId}`, {
-                    timeout: 60000, // 60 seconds timeout for debugging
+                    timeout: 80000, // 60 seconds timeout for debugging
                 });
                 
                 console.log('Response data:', response.data);
